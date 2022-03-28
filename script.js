@@ -7,17 +7,17 @@ let temps = [
     document.getElementById('fridayLow'),
     document.getElementById('saturdayHigh'),
     document.getElementById('saturdayLow')
-];
+]; //adding all temps to array so we can update them all with a loop
 
-function loadingWeather(){
+function loadingWeather(){ //alerts user when clicking on a city
     alert('Loading weather report...');
 }
 
-function hide(element) {
+function hide(element) { //hides the element when called. Used to hide .cookieBox
     element.style.display = 'none';
 }
 
-function degreeConversion(choice){
+function degreeConversion(choice){ //Converts temps to C (if they are F) or F (if they are C)
     if(choice.value === 'F'){
         for (let i = 0; i < temps.length; i++) {
             temps[i].innerHTML = Math.round(temps[i].innerHTML*1.8+32);
