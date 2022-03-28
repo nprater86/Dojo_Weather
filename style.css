@@ -1,0 +1,138 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Header Start */
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #9fc5f8;
+    height: 75px;
+    display: flex;
+    justify-content: center;
+}
+
+.topNav {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.cities {
+    list-style-type: none;
+    font-size: large;
+    display: flex;
+}
+
+.cities li {
+    padding-right: 50px;
+    cursor: pointer;
+}
+
+/* Header End */
+/* Main Start */
+/*Current City Start*/
+.main {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+    top: 75px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.currentCity {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid black;
+}
+/*Current City End*/
+/*Days Start*/
+.days {
+    display: flex;
+    gap: 25px;
+}
+
+.dayCard {
+    min-height:250px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #eeeeee;
+    gap: 15px;
+}
+
+.weatherImg {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.dayCard p {
+    font-weight: bold;
+}
+
+.highLow {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.high {
+    color: #cf2a27;
+}
+
+.low {
+    color: #2d79e3;
+}
+/*Days End*/
+/*Cookies Start*/
+.cookieBox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    background-color: #eeeeee;
+    font-weight: bold;
+}
+
+.cookieImg {
+    height: 64px;
+    width: 64px;
+    flex: 1;
+    background-color: pink;
+    text-align: center;
+}
+
+.cookieMsg {
+    flex: 3;
+    background-color: aqua;
+}
+
+.cookieBtn {
+    flex: 1;
+    background-color: lightyellow;
+    text-align: center;
+}
+
+.cookieBtn button {
+    background-color: #9fc5f8;
+    border: 2px solid black;
+    box-shadow: 2px 2px black;
+    padding: 5px 10px;
+    position: relative;
+}
+
+.cookieBtn button:active {
+    box-shadow: none;
+    top: 2px;
+    left: 2px;
+}
+

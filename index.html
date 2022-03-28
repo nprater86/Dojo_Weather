@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./script.js" defer></script>
+    <title>Dojo Weather</title>
+</head>
+<body>
+    <!--Header Start-->
+    <header>
+        <div class="topNav">
+            <div class="logo">
+                <h1>DojoWeather</h1>
+            </div>
+            <ul class="cities">
+                <li id="burbankBtn">Burbank</li>
+                <li id="chicagoBtn">Chicago</li>
+                <li id="dallasBtn">Dallas</li>
+            </ul>
+        </div>
+    </header>
+    <!-- Header End -->
+    <!-- Main Start -->
+    <div class="main">
+        <!-- Current City Start -->
+        <div class="currentCity">
+            <h1>San Jose</h1>
+            <div class="CorFselect">
+                <label for="CorFselector">show temperature in</label>
+                <select id="CorFselector">
+                    <option value="C">&degC</option>
+                    <option value="F">&degF</option>
+                </select>
+            </div>
+        </div>
+        <!-- Current City End -->
+        <!-- Days Start -->
+        <div class="days">
+            <div class="dayCard">
+                <h2>Today</h2>
+                <img class="weatherImg" src="./assets/some_rain.png" alt="">
+                <p>some rain</p>
+                <div class="highLow">
+                    <h3 id="todayHigh" class="high">24&deg</h3>
+                    <h3 id="todayLow" class="low">18&deg</h3>
+                </div>
+            </div>
+            <div class="dayCard">
+                <h2>Tomorrow</h2>
+                <img class="weatherImg" src="./assets/some_sun.png" alt="image of some sun">
+                <p>some sun</p>
+                <div class="highLow">
+                    <h3 id="tomorrowHigh" class="high">27&deg</h3>
+                    <h3 id="tomorrowLow" class="low">19&deg</h3>
+                </div>
+            </div>
+            <div class="dayCard">
+                <h2>Friday</h2>
+                <img class="weatherImg" src="./assets/some_clouds.png" alt="image of some clouds">
+                <p>some clouds</p>
+                <div class="highLow">
+                    <h3 id="todayHigh" class="high">21&deg</h3>
+                    <h3 id="todayLow" class="low">16&deg</h3>
+                </div>
+            </div>
+            <div class="dayCard">
+                <h2>Saturday</h2>
+                <img class="weatherImg" src="./assets/some_sun.png" alt="image of some sun">
+                <p>some sun</p>
+                <div class="highLow">
+                    <h3 id="todayHigh" class="high">26&deg</h3>
+                    <h3 id="todayLow" class="low">21&deg</h3>
+                </div>
+            </div>
+        </div>
+        <!-- Days End -->
+        <!-- Cookie Start -->
+        <div id="cookieBox" class="cookieBox">
+            <div class="cookieImg">
+                <img src="./assets/cookie.png" alt="">
+            </div>
+            <div class="cookieMsg">
+                <h3>Stop! Cookie time</h3>
+                <p>We use cookies (sadly not the edible ones) to personalize conent and ads, to provide social media features, and to analyse our traffinc. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s">Read more...</a></p>
+            </div>
+            <div class="cookieBtn">
+                <button class="cookieBtn">I Accept</button>
+            </div>
+        </div>
+        <!-- Cookie End -->
+    </div>
+</body>
+</html>
