@@ -3,6 +3,11 @@ body {
     padding: 0;
 }
 
+
+.topNav, .main {
+    width: 850px;
+}
+
 /* Header Start */
 header {
     position: fixed;
@@ -14,7 +19,6 @@ header {
 }
 
 .topNav {
-    width: 1000px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -36,7 +40,6 @@ header {
 /* Main Start */
 /*Current City Start*/
 .main {
-    width: 1000px;
     margin: 0 auto;
     position: relative;
     top: 75px;
@@ -107,18 +110,15 @@ header {
     height: 64px;
     width: 64px;
     flex: 1;
-    background-color: pink;
     text-align: center;
 }
 
 .cookieMsg {
     flex: 3;
-    background-color: aqua;
 }
 
 .cookieBtn {
     flex: 1;
-    background-color: lightyellow;
     text-align: center;
 }
 
