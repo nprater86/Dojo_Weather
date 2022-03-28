@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="./script.js" defer></script>
     <title>Dojo Weather</title>
@@ -16,9 +19,9 @@
                 <h1>DojoWeather</h1>
             </div>
             <ul class="cities">
-                <li id="burbankBtn">Burbank</li>
-                <li id="chicagoBtn">Chicago</li>
-                <li id="dallasBtn">Dallas</li>
+                <li id="burbankBtn" onclick="loadingWeather()">Burbank</li>
+                <li id="chicagoBtn" onclick="loadingWeather()">Chicago</li>
+                <li id="dallasBtn" onclick="loadingWeather()">Dallas</li>
             </ul>
         </div>
     </header>
@@ -30,7 +33,7 @@
             <h1>San Jose</h1>
             <div class="CorFselect">
                 <label for="CorFselector">show temperature in</label>
-                <select id="CorFselector">
+                <select onchange="degreeConversion(this)" id="CorFselector">
                     <option value="C">&degC</option>
                     <option value="F">&degF</option>
                 </select>
@@ -44,8 +47,8 @@
                 <img class="weatherImg" src="./assets/some_rain.png" alt="">
                 <p>some rain</p>
                 <div class="highLow">
-                    <h3 id="todayHigh" class="high">24&deg</h3>
-                    <h3 id="todayLow" class="low">18&deg</h3>
+                    <h3 class="high"><span id="todayHigh">24</span>&deg</h3>
+                    <h3 class="low"><span id="todayLow">18</span>&deg</h3>
                 </div>
             </div>
             <div class="dayCard">
@@ -53,8 +56,8 @@
                 <img class="weatherImg" src="./assets/some_sun.png" alt="image of some sun">
                 <p>some sun</p>
                 <div class="highLow">
-                    <h3 id="tomorrowHigh" class="high">27&deg</h3>
-                    <h3 id="tomorrowLow" class="low">19&deg</h3>
+                    <h3 class="high"><span id="tomorrowHigh">27</span>&deg</h3>
+                    <h3 class="low"><span id="tomorrowLow">19</span>&deg</h3>
                 </div>
             </div>
             <div class="dayCard">
@@ -62,8 +65,8 @@
                 <img class="weatherImg" src="./assets/some_clouds.png" alt="image of some clouds">
                 <p>some clouds</p>
                 <div class="highLow">
-                    <h3 id="todayHigh" class="high">21&deg</h3>
-                    <h3 id="todayLow" class="low">16&deg</h3>
+                    <h3 class="high"><span id="fridayHigh">21</span>&deg</h3>
+                    <h3 class="low"><span id="fridayLow">16</span>&deg</h3>
                 </div>
             </div>
             <div class="dayCard">
@@ -71,8 +74,8 @@
                 <img class="weatherImg" src="./assets/some_sun.png" alt="image of some sun">
                 <p>some sun</p>
                 <div class="highLow">
-                    <h3 id="todayHigh" class="high">26&deg</h3>
-                    <h3 id="todayLow" class="low">21&deg</h3>
+                    <h3 class="high"><span id="saturdayHigh">26</span>&deg</h3>
+                    <h3 class="low"><span id="saturdayLow">21</span>&deg</h3>
                 </div>
             </div>
         </div>
@@ -84,10 +87,10 @@
             </div>
             <div class="cookieMsg">
                 <h3>Stop! Cookie time</h3>
-                <p>We use cookies (sadly not the edible ones) to personalize conent and ads, to provide social media features, and to analyse our traffinc. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s">Read more...</a></p>
+                <p>We use cookies (sadly not the edible ones) to personalize conent and ads, to provide social media features, and to analyse our traffinc. <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ&t=1s" target="_blank">Read more...</a></p>
             </div>
             <div class="cookieBtn">
-                <button class="cookieBtn">I Accept</button>
+                <button class="cookieBtn" onclick="hide(cookieBox)">I Accept</button>
             </div>
         </div>
         <!-- Cookie End -->
