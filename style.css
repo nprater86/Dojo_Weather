@@ -36,8 +36,13 @@ header {
 
 .cities li {
     padding-right: 50px;
-    cursor: pointer;
 }
+
+.cities li a {
+    text-decoration: none;
+    color: white;
+}
+
 /* Header End */
 
 /* Main Start */
